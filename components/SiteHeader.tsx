@@ -113,37 +113,51 @@ export default function SiteHeader() {
               // Research expandable group
               if (item.children && item.children.length) {
                 return (
-                  <div key={item.href} className="navMobileGroup">
-                    <button
-                      type="button"
-                      className={`navMobileTop ${isResearchActive ? "active" : ""}`}
-                      onClick={() => setResearchOpen((v) => !v)}
-                      aria-expanded={researchOpen}
-                    >
-                      {item.label}
-                      <span className="navMobileChevron">{researchOpen ? "▲" : "▼"}</span>
-                    </button>
+                <div key={item.href} className="navMobileGroup">
+  <div className={`navMobileTopRow ${isResearchActive ? "active" : ""}`}>
+    <Link
+      href={item.href}
+      className="navMobileTopLink"
+      onClick={() => {
+        setOpen(false);
+        setResearchOpen(false);
+      }}
+    >
+      {item.label}
+    </Link>
 
-                    {researchOpen && (
-                      <div className="navMobileSub">
-                        {item.children.map((c) => (
-                          <Link
-                            key={c.href}
-                            href={c.href}
-                            className={`navMobileSubLink ${pathname === c.href ? "active" : ""}`}
-                            onClick={() => {
-                              setOpen(false);
-                              setResearchOpen(false);
-                            }}
-                          >
-                            {c.label}
-                          </Link>
-                        ))}
-                      </div>
-                    )}
-                  </div>
+    <button
+      type="button"
+      className="navMobileTopToggle"
+      onClick={() => setResearchOpen((v) => !v)}
+      aria-expanded={researchOpen}
+      aria-label={`Toggle ${item.label} submenu`}
+    >
+      <span className="navMobileChevron">{researchOpen ? "▲" : "▼"}</span>
+    </button>
+  </div>
+
+  {researchOpen && (
+    <div className="navMobileSub">
+      {item.children.map((c) => (
+        <Link
+          key={c.href}
+          href={c.href}
+          className={`navMobileSubLink ${pathname === c.href ? "active" : ""}`}
+          onClick={() => {
+            setOpen(false);
+            setResearchOpen(false);
+          }}
+        >
+          {c.label}
+        </Link>
+      ))}
+    </div>
+  )}
+</div> 
                 );
               }
+               
 
               const active = item.href === activeHref;
               return (
