@@ -60,7 +60,7 @@ export default function HomePage() {
              >
             “Quantum Dot-Microbe Hybrid Systems for Solar-to-Chemical Conversion”
             </a>{" "}
-            Journal of Materials Chemistry A!
+            by Journal of Materials Chemistry A!
             </div>
             <div className="newsItem">2025-12-25: Welcome Yilun Liu to our lab as a Research Assistant!</div>
            <div className="newsItem">
