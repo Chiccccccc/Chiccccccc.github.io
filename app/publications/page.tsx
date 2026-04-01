@@ -42,6 +42,16 @@ function renderAuthors(authors: string) {
 
 const PAPERS: Paper[] = [
   {
+    year: "2026",
+    title: "Quantum Dot-Microbe Hybrid Systems for Solar-to-Chemical Conversion",
+    link: "https://pubs.rsc.org/en/content/articlelanding/2026/ta/d6ta00739b",
+    authors: "Y. Zhang, L. Gong, W. Huang, C. Chen",
+    venue: "Journal of Materials Chemistry A",
+    volume: "x",
+    pages: "xxx–xxx",
+    image: "/publications/jmca2026.png",
+  },
+  {
     year: "2025",
     title: "Programmable Nucleic Acid Origami Nanostructures for Immunotherapy",
     link: "https://www.sciencedirect.com/science/article/pii/S2590183425000390",

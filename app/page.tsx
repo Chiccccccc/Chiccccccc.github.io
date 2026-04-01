@@ -51,6 +51,17 @@ export default function HomePage() {
           <h2 className="newsTitle">NEWS</h2>
 
           <div className="newsList">
+             <div className="newsItem">
+            2026-03-31: Congratulations to Yufei Zhang, Dr. Li Gong, and Wenbin Huang on the successful acceptance of their paper entitled{" "}
+             <a
+             href="https://pubs.rsc.org/en/content/articlelanding/2026/ta/d6ta00739b"  /* 换成你这篇文章的 DOI 或期刊页面 */
+             target="_blank"
+             rel="noreferrer"
+             >
+            “Quantum Dot-Microbe Hybrid Systems for Solar-to-Chemical Conversion”
+            </a>{" "}
+            Journal of Materials Chemistry A!
+            </div>
             <div className="newsItem">2025-12-25: Welcome Yilun Liu to our lab as a Research Assistant!</div>
            <div className="newsItem">
             2025-11-27: Congratulations to Dr. Jia Jia and Xitong Liu on the successful acceptance of their paper entitled{" "}
