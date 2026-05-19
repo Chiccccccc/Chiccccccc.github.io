@@ -47,8 +47,8 @@ const PAPERS: Paper[] = [
     link: "https://pubs.rsc.org/en/content/articlelanding/2026/ta/d6ta00739b",
     authors: "Y. Zhang, L. Gong, W. Huang, C. Chen",
     venue: "Journal of Materials Chemistry A",
-    volume: "x",
-    pages: "xxx–xxx",
+    volume: "14",
+    pages: "17706–17736",
     image: "/publications/jmca2026.png",
   },
   {
