@@ -74,6 +74,13 @@ const TEAM = [
     photo: "/people/yilun.png",
     bio: "Yilun Liu holds a Bachelor’s degree in Clinical Medicine from Shandong First Medical University and a Master’s degree in Medical Neurobiology from Peking University. He is currently a Research Assistant in the laboratory, with a broad interest in conducting research that delivers practical value. Outside the lab, he enjoys philosophy and game design.",
   },
+  {
+    name: "Limei Li",
+    role: "Master's Student",
+    email: "xx@siat.ac.com",
+    photo: "/people/limei.jpg",
+    bio: "Limei Li received her Bachelor’s degree in Biomedical Engineering at Guangdong University of Technology. She is currently pursuing her Master’s degree in Biology and Medicine at the Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences. Her hobbies include badminton and listening to music.",
+  },
 ];
 
 
