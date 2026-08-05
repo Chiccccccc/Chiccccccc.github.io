@@ -77,23 +77,33 @@ const TEAM = [
   {
     name: "Limei Li",
     role: "Master's Student",
-    email: "xx@siat.ac.com",
+    email: "lm.li@siat.ac.cn",
     photo: "/people/limei.jpg",
     bio: "Limei Li received her Bachelor’s degree in Biomedical Engineering at Guangdong University of Technology. She is currently pursuing her Master’s degree in Biology and Medicine at the Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences. Her hobbies include badminton and listening to music.",
   },
 ];
 
 
-const GROUP_PHOTOS = {
-  slides: [
-    { src: "/group/gp2026261.jpg", alt: "Group photo 1" },
-    { src: "/group/gp2026262.jpg", alt: "Group photo 2" },
-    
-  ],
-  time: "2026-2-6",
-  place: "No. 79 Fishing Boat Seafood Restaurant",
-  note: "Year-end lunch",
-};
+const GROUP_PHOTOS = [
+  {
+    slides: [
+      { src: "/group/gp2026261.jpg", alt: "Group photo 1" },
+      { src: "/group/gp2026262.jpg", alt: "Group photo 2" },
+    ],
+    time: "2026-02-06",
+    place: "No. 79 Fishing Boat Seafood Restaurant",
+    note: "Year-end lunch",
+  },
+  {
+    slides: [
+      { src: "/group/gp202608041.jpg", alt: "Group photo 1" },
+      { src: "/group/gp202608042.jpg", alt: "Group photo 2" },
+    ],
+    time: "2026-08-04",
+    place: "Happy Ranch",
+    note: "Mid-Year Team Event ",
+  },
+];
 
 const ALUMNI = [
   { name: "Huaixuan (Hazel) Cao", now: "McMaster University", photo: "/alumi/huaixuan.png" },
@@ -233,25 +243,36 @@ export default function PeoplePage() {
 <h2 className="sectionTitleCaps">GROUP PHOTOS</h2>
 <Divider />
 
-<div className="groupPhotosGrid">
-  <div>
-    <GroupCarousel slides={GROUP_PHOTOS.slides} />
-  </div>
+<div className="groupPhotosList">
+  {GROUP_PHOTOS.map((group, groupIndex) => (
+    <div
+      key={`${group.time}-${groupIndex}`}
+      className="groupPhotosGrid"
+      style={{
+        marginBottom:
+          groupIndex < GROUP_PHOTOS.length - 1 ? "32px" : 0,
+      }}
+    >
+      <div>
+        <GroupCarousel slides={group.slides} />
+      </div>
 
-  <aside className="groupMetaBox">
-    <div className="groupMetaTitle">Time &amp; Location</div>
-    <p className="groupMetaText">
-      <strong>Time:</strong> {GROUP_PHOTOS.time}
-      <br />
-      <strong>Location:</strong> {GROUP_PHOTOS.place}
-      {GROUP_PHOTOS.note ? (
-        <>
+      <aside className="groupMetaBox">
+        <div className="groupMetaTitle">Time &amp; Location</div>
+        <p className="groupMetaText">
+          <strong>Time:</strong> {group.time}
           <br />
-          <strong>Note:</strong> {GROUP_PHOTOS.note}
-        </>
-      ) : null}
-    </p>
-  </aside>
+          <strong>Location:</strong> {group.place}
+          {group.note ? (
+            <>
+              <br />
+              <strong>Note:</strong> {group.note}
+            </>
+          ) : null}
+        </p>
+      </aside>
+    </div>
+  ))}
 </div>
 
 <Divider />
