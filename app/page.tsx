@@ -51,6 +51,7 @@ export default function HomePage() {
           <h2 className="newsTitle">NEWS</h2>
 
           <div className="newsList">
+             <div className="newsItem"> 2026-08-26: Congratulations to Dr. Li Gong and Dr. Jia Jia on being awarded grants from the Young Scientists Fund (Category C) of the National Natural Science Foundation of China (NSFC)!</div>
              <div className="newsItem"> 2026-07-23: Welcome Limei Li to our lab as a Graduate Student!</div>
              <div className="newsItem">
             2026-03-31: Congratulations to Yufei Zhang, Dr. Li Gong, and Wenbin Huang on the successful acceptance of their paper entitled{" "}
