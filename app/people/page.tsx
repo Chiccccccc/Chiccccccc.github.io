@@ -18,13 +18,7 @@ const PI = {
 };
 
 const TEAM = [
-  {
-    name: "Jia Jia",
-    role: "Postdoctoral Associate",
-    email: "j.jia@siat.ac.cn",
-    photo: "/people/jiajia.jpg",
-    bio: "Dr. Jia Jia,  graduated from South China Agricultural University in June 2024 as a PhD majoring in crop genetics and breeding, her primary research focus was on the genetics and molecular breeding of soybean.",
-  },
+  
   {
     name: "Xitong Liu",
     role: "Master's Student",
@@ -85,6 +79,15 @@ const TEAM = [
 
 
 const GROUP_PHOTOS = [
+   {
+    slides: [
+      { src: "/group/gp202608041.jpg", alt: "Group photo 1" },
+      { src: "/group/gp202608042.jpg", alt: "Group photo 2" },
+    ],
+    time: "2026-08-04",
+    place: "Happy Ranch",
+    note: "Mid-Year Team Event ",
+  },
   {
     slides: [
       { src: "/group/gp2026261.jpg", alt: "Group photo 1" },
@@ -94,19 +97,12 @@ const GROUP_PHOTOS = [
     place: "No. 79 Fishing Boat Seafood Restaurant",
     note: "Year-end lunch",
   },
-  {
-    slides: [
-      { src: "/group/gp202608041.jpg", alt: "Group photo 1" },
-      { src: "/group/gp202608042.jpg", alt: "Group photo 2" },
-    ],
-    time: "2026-08-04",
-    place: "Happy Ranch",
-    note: "Mid-Year Team Event ",
-  },
+ 
 ];
 
 const ALUMNI = [
   { name: "Huaixuan (Hazel) Cao", now: "McMaster University", photo: "/alumi/huaixuan.png" },
+  { name: "Jia Jia", now: "", photo: "/alumi/jiajia.jpg" },
 
 ];
 
